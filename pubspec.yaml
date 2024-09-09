@@ -1,0 +1,47 @@
+name: ecommerce
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+# ----------------------------- PACKAGES -------------------------------------#
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Utility Packages
+
+  # Icons
+  cupertino_icons: ^1.0.8
+  iconsax: ^0.0.8
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+  # State Management
+  get: ^4.6.6
+
+  # Product Specific
+
+# -----------------------------./ PACKAGES END -------------------------------------#
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Local assets
+  assets:
+    - assets/images/
+    - assets/logos/
+    - assets/icons/
+
+  # Local Fonts
