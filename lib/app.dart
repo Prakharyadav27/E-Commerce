@@ -1,5 +1,4 @@
 import 'package:ecommerce/features/authentication/screens/onBoarding/onboarding.dart';
-import 'package:ecommerce/features/authentication/screens/signup.widgets/signup_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';

@@ -1,5 +1,6 @@
 import 'package:ecommerce/features/authentication/controller.onboarding/onboarding_controller.dart';
 import 'package:ecommerce/features/authentication/screens/login/login_Screen.dart';
+import 'package:ecommerce/features/authentication/screens/signup.widgets/verify_email_screen.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
@@ -19,7 +20,7 @@ class SignupScreen extends StatelessWidget {
       appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(
+          padding: const EdgeInsets.all(
             TSizes.defaultSpace,
           ),
           child: Column(
@@ -132,7 +133,7 @@ class SignupScreen extends StatelessWidget {
                                   text: '${TTexts.iAgreeTo} ',
                                   style: Theme.of(context).textTheme.bodySmall),
                               TextSpan(
-                                text: '${TTexts.privacyPolicy}',
+                                text: TTexts.privacyPolicy,
                                 style: Theme.of(context)
                                     .textTheme
                                     .bodyMedium!
@@ -150,7 +151,7 @@ class SignupScreen extends StatelessWidget {
                                   text: ' ${TTexts.and} ',
                                   style: Theme.of(context).textTheme.bodySmall),
                               TextSpan(
-                                text: '${TTexts.termsOfUse}',
+                                text: TTexts.termsOfUse,
                                 style: Theme.of(context)
                                     .textTheme
                                     .bodyMedium!
@@ -175,7 +176,9 @@ class SignupScreen extends StatelessWidget {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.to(() => const VerifyEmailScreen());
+                          },
                           child: const Text(TTexts.createAccount)),
                     ),
                     const SizedBox(

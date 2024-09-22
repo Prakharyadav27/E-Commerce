@@ -48,13 +48,13 @@ class OnboardingScreen extends StatelessWidget {
           ),
 
           // Skip button
-          OnBoardingSkip(),
+          const OnBoardingSkip(),
 
           // Dot Navigation Page Indicator
-          OnboardingNavigation(),
+          const OnboardingNavigation(),
 
           // Circular Button
-          OnboardingCircularButton()
+          const OnboardingCircularButton()
         ],
       ),
     );
@@ -74,7 +74,7 @@ class OnboardingCircularButton extends StatelessWidget {
       right: TSizes.defaultSpace,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-              shape: CircleBorder(),
+              shape: const CircleBorder(),
               backgroundColor: dark ? TColors.buttonPrimary : TColors.black),
           onPressed: () {
             OnboardingController.instance.nextPage();
